@@ -16,7 +16,7 @@ public class ExampleUnitTest {
   @Test
   public void layerTest () {
     Conversation conversation = Mockito.mock(Conversation.class);
-    Mockito.doReturn(3).when(conversation.getTotalMessageCount());
+    Mockito.doReturn(3).when(conversation).getTotalMessageCount();
 
     int messages = conversation.getTotalMessageCount();
 
